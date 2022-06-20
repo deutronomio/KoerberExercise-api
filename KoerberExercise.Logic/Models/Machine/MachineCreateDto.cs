@@ -15,7 +15,7 @@ namespace KoerberExercise.Logic.Models.Machine
         [MaxLength(150)]
         public string Description { get; set; }
 
-        [Range(0, Int32.MaxValue, ErrorMessage = "The field {0} must be greater than {1}.")]
+        [Range(1, Int32.MaxValue, ErrorMessage = "The field {0} must be greater than {1}.")]
         public int? ParentId { get; set; }
 
         [ValidEnum]
